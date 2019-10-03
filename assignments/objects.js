@@ -44,33 +44,44 @@ for (let i =0; i < interns.length; i++){
     }
  }
 
-
 // Keven's email
-console.log(keven.email);
+for (let i =0; i < interns.length; i++){
+  if(interns[i].name === "Keven"){
+    console.log(interns[i].email);
+  }
+}
 
 // Gannie's name
-console.log(gannie.name);
-
+for (let i =0; i < interns.length; i++){
+  if(interns[i].name === "Gannie"){
+    console.log(interns[i].name);
+  }
+}
 
 // Antonietta's Gender
-console.log(antonietta.gender);
+for (let i =0; i < interns.length; i++){
+  if(interns[i].name === "Gannie"){
+    console.log(interns[i].gender);
+  }
+}
 
 // ==== Challenge 3: Object Methods ==== 
 // Give Kennan the ability to say "Hello, my name is Kennan!" Use the console.log provided as a hint.
  
-let hi = function() {
-  return `Hello, my name is ${this.name}!`;
+let kennan = {
+  speak: function() {
+    return `Hello, my name is ${interns[1].name}!`;
+  }
 }
-kennan.speak = hi;
-
 console.log(kennan.speak());
 
 // Antonietta loves math, give her the ability to multiply two numbers together and return the product. Use the console.log provided as a hint.
 
-const multiply = function(num1, num2) {
-  return num1*num2;
+let antonietta = {
+  multiplyNums: function(num1, num2) {
+    return num1*num2;
+  }
 }
-antonietta.multiplyNums = multiply;
 
 console.log(antonietta.multiplyNums(3,4));
 
