@@ -20,49 +20,30 @@ const example = {
 
 // Write your intern objects here:
 
-const mitzi = {
-  id: 1,
-  name: "Mitzi",
-  email: "mmelloy0@psu.edu",
-  gender: "F",
-}
-
-const kennan = {
-  id: 2,
-  name: "Kennan",
-  email: "kdiben1@tinypic.com",
-  gender: "M",
-}
-
-const keven = {
-  id: 3,
-  name: "Keven",
-  email: "kmummery2@wikimedia.org",
-  gender: "M",
-}
-
-const gannie = {
-  id: 4,
-  name: "Gannie",
-  email: "gmartinson3@illinois.edu",
-  gender: "M",
-}
-
-const antonietta = {
-  id: 5,
-  name: "Antonietta",
-  email: "adaine5@samsung.com",
-  gender: "F",
-}
+const interns = [
+  {id: 1, name: "Mitzi", email: "mmelloy0@psu.edu", gender: "F"},
+  {id: 2, name: "Kennan", email: "kdiben1@tinypic.com", gender: "M"},
+  {id: 3, name: "Keven", email: "kmummery2@wikimedia.org", gender: "M"},
+  {id: 4, name: "Gannie", email: "gmartinson3@illinois.edu", gender: "M"},
+  {id: 5, name: "Antonietta", email: "adaine5@samsung.com", gender: "F"}
+];
 
 // ==== Challenge 2: Reading Object Data ==== 
 // Once your objects are created, log out the following requests from HR into the console:
 
 // Mitzi's name
-console.log(mitzi.name);
-
+for (let i =0; i < interns.length; i++){
+    if(interns[i].name === "Mitzi"){
+      console.log(interns[i].name);
+    }
+  }
 // Kennan's ID
-console.log(kennan.id);
+for (let i =0; i < interns.length; i++){
+    if(interns[i].name === "Kennan"){
+      console.log(interns[i].id);
+    }
+ }
+
 
 // Keven's email
 console.log(keven.email);
