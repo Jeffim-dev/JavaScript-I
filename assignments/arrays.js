@@ -78,8 +78,8 @@ let inventory = [
 console.log(`Car 33 is a *car year goes here* *car make goes here* *car model goes here*`);
 
 for (let i = 0; i < inventory.length; i++){
-  if (i === 33){
-    console.log('Car 33 is a ' + inventory[i].car_year + ' ' + inventory[i].car_make + ' ' + inventory[i].car_model +'.');
+  if (i === 32){
+    console.log(`Car 33 is a  ${inventory[i].car_year}  inventory[i].car_make + ' ' + inventory[i].car_model +'.');
   }
 }
 

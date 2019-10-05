@@ -18,6 +18,7 @@ const example = {
   gender: "F",
 }
 
+console.log(exmple.name);
 // Write your intern objects here:
 
 const interns = [
